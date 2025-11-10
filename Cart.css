@@ -1,0 +1,118 @@
+/* Styling for the shopping cart component */
+
+/* Container for the entire cart */
+.cart-container {
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', sans-serif;
+    direction: rtl;
+    padding: 1rem;
+    overflow-x: hidden;
+  }
+  
+  /* Cart title styling */
+  .cart-title {
+    margin: 0 0 1rem 0;
+  }
+  
+  /* Scrollable container for cart items */
+  .cart-items {
+    flex-grow: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+  /* Individual cart item styling */
+  .cart-item {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5rem;
+  }
+  
+  /* Header section inside each cart item */
+  .item-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    word-break: break-word;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Product image inside cart item */
+  .item-image {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  
+  /* Product title inside cart item */
+  .item-title {
+    flex: 1;
+  }
+  
+  /* Controls section: quantity buttons and remove */
+  .item-controls {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  /* Quantity input field styling */
+  .quantity-input {
+    width: 40px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+  
+  /* Price display inside cart item */
+  .item-price {
+    margin-left: auto;
+    text-align: right;
+    min-width: 100px;
+    font-size: 0.9rem;
+  }
+  
+  /* Remove button styling */
+  .remove-button {
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    flex-shrink: 0;
+  }
+  
+  /* Total price section styling */
+  .cart-total {
+    margin-top: 1rem;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  /* Checkout button styling */
+  .checkout-button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    text-align: center;
+    flex-shrink: 0;
+  }
+  
+  /* Disabled checkout button state */
+  .checkout-button:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+  }
